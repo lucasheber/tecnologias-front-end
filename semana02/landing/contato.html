@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de agendamento de compromissos</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .cover-container {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            color: #f1f1f1;
+            padding: 20px;
+            min-width: 100% !important;
+            min-height: 100% !important;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        style >
+    </style>
+    <link rel="stylesheet" href="main.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+<video autoplay muted loop id="myVideo">
+    <source src="media/bg.mp4" type="video/mp4">
+</video>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main class="w-50 bg-gradient text-start p-5" style="margin: 0 auto; border-radius: 20px">
+        <p>Envie-nos sua mensagem, e receba os dados de acesso: </p>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="mensage" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensage" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Enviar</button>
+        </form>
+    </main>
+    <footer class="mt-auto text-white-50">
+        <p>&copy; 2022 by Lucas Heber</p>
+    </footer>
+</div>
+</body>
+</html>

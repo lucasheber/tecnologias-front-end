@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de agendamento de compromissos</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .cover-container {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            color: #f1f1f1;
+            padding: 20px;
+            min-width: 100% !important;
+            min-height: 100% !important;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+<video autoplay muted loop id="myVideo">
+    <source src="media/bg.mp4" type="video/mp4">
+</video>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="px-3">
+        <h1>Faça a gestão de seus compromissos e tarefas.</h1>
+        <p class="lead w-75" style="margin: 0 auto">Controle sua rotina de uma maneira simples e eficaz atráves nosso sistema. Recebeba notificações
+            dos usuários que estão com pendências de tarefas com o <i>deadline</i> vencendo e se programe com base no
+            calendário dos seus amigos!</p>
+
+        <p class="lead mt-5">
+            <a href="contato.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Conheça agora!</a>
+        </p>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+        <p>&copy; 2022 by Lucas Heber</p>
+    </footer>
+</div>
+
+</body>
+</html>
