@@ -1,5 +1,5 @@
 import React from "react";
-function CaixaTexto(props) {
+function TextBox(props) {
     const [count, setCount] = React.useState(0);
 
     return (
@@ -11,4 +11,4 @@ function CaixaTexto(props) {
     );
 }
 
-export default CaixaTexto;
+export default TextBox;

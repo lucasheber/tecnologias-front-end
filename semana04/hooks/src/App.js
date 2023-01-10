@@ -1,5 +1,5 @@
 import './App.css';
-import CaixaTexto from "./CaixaTexto";
+import TextBox from "./TextBox";
 import {useState} from "react";
 
 function App() {
@@ -9,12 +9,12 @@ function App() {
     });
 
     const show = () => {
-        console.log(user.logged)
+        // console.log(user.logged)
         setUser({logged: true});
     }
 
     const hide = () => {
-        console.log(user.logged)
+        // console.log(user.logged)
         setUser({logged: false});
     }
 
@@ -24,7 +24,7 @@ function App() {
                 {
                     user.logged ?
                         <div>
-                            <CaixaTexto title={"Digite a mensagem de boas vindas!"}/>
+                            <TextBox title={"Digite a mensagem de boas vindas!"}/>
                             <button className="btn_logout" onClick={hide}>Logout</button>
                         </div>
                         :
@@ -37,6 +37,5 @@ function App() {
         </div>
     );
 }
-
 
 export default App;
